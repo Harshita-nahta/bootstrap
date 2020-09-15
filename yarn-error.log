@@ -1,0 +1,80 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add bootstrap-social
+
+PATH: 
+  C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\Users\Welcome\AppData\Local\Programs\Python\Python38-32\Scripts\;C:\Users\Welcome\AppData\Local\Programs\Python\Python38-32\;C:\Users\Welcome\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk-14.0.1\bin;C:\Users\Welcome\AppData\Roaming\npm;C:\SDK\Google\usb_driver;C:\Program Files\MongoDB\Server\4.2\bin;C:\Users\Welcome\AppData\Local\Yarn\bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  14.2.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\Users\Welcome\AppData\Local\Yarn\Cache\v6\npm-moment-2.27.0-8bff4e3e26a236220dfe3e36de756b6ebaa0105d-integrity\node_modules\moment\.yarn-tarball.tgz'
+
+npm manifest: 
+  {
+    "name": "confusion",
+    "version": "1.0.0",
+    "description": "This is a website for Ristorante Con Fusion",
+    "main": "index.html",
+    "scripts": {
+      "start": "npm run watch:all",
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "lite": "lite-server",
+      "scss": "node-sass -o css/ css/",
+      "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+      "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\"",
+      "clean": "rimraf dist",
+      "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+      "imagemin": "imagemin img/* --out-dir='dist/img'",
+      "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin index.html -d dist --htmlmin -o dist/index.html",
+      "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "browser-sync": "^2.26.12",
+      "grunt": "^1.2.1",
+      "grunt-browser-sync": "^2.2.0",
+      "grunt-contrib-clean": "^2.0.0",
+      "grunt-contrib-concat": "^1.0.1",
+      "grunt-contrib-copy": "^1.0.0",
+      "grunt-contrib-cssmin": "^3.0.0",
+      "grunt-contrib-htmlmin": "^3.1.0",
+      "grunt-contrib-imagemin": "^4.0.0",
+      "grunt-contrib-uglify": "^5.0.0",
+      "grunt-contrib-watch": "^1.1.0",
+      "grunt-filerev": "^2.3.1",
+      "grunt-sass": "^3.1.0",
+      "grunt-usemin": "^3.1.1",
+      "gulp": "^4.0.2",
+      "gulp-sass": "^4.1.0",
+      "install": "^0.13.0",
+      "jit-grunt": "^0.10.0",
+      "lite-server": "^2.3.0",
+      "node-sass": "^4.14.1",
+      "npm": "^6.14.7",
+      "onchange": "^3.3.0",
+      "parallelshell": "^3.0.1",
+      "rimraf": "^3.0.2",
+      "time-grunt": "^2.0.0"
+    },
+    "dependencies": {
+      "bootstrap": "^4.5.0",
+      "bootstrap-social": "^5.1.1",
+      "font-awesome": "^4.7.0",
+      "jquery": "^3.5.1",
+      "popper.js": "^1.16.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
